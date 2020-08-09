@@ -1,0 +1,21 @@
+@import "./normalize.css";
+@import "./font-awesome-4.7.0/css/font-awesome.min.css";
+
+:root {
+    --font-size: 14px;
+}
+
+body {
+    background-color: aqua;
+}
+
+* { margin: 0; padding: 0;}     /* 清除所有元素的内外边距 */
+
+a { text-decoration: none; }    /* 去除a的下划线 */
+
+ul, ol { list-style: none; }    /* 去除ul,ol的圆点 */
+
+input { outline-style: none; }  /* 去除input的外线 */
+
+a, button, input { -webkit-tap-highlight-color: rgba(0 ,0, 0, 0); }
+
