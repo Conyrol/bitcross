@@ -71,7 +71,7 @@ export default {
 </script>
 
 <style>
-  div {
+  .lsbar_main {
     background-color: transparent;
     text-align: center;
   }
@@ -83,7 +83,7 @@ export default {
     transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     box-shadow: 0px 1px 2px #333333;
-	  -moz-box-shadow: 0px 1px 2px #333333;
-	  -webkit-box-shadow:0px 1px 2px #333333;
+    -moz-box-shadow: 0px 1px 2px #333333;
+    -webkit-box-shadow:0px 1px 2px #333333;
   }
 </style>

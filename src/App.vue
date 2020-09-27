@@ -1,10 +1,10 @@
 <template>
   <div id = "app">
-    <topbar></topbar>
+    <topbar class = "topbar"></topbar>
     <div class = "contentFlex">
-      <div class = "contentDiv">
+      <div class = "contentDiv_main">
         <left-sidebar class = "leftSidebar"></left-sidebar>
-        <contentbar class = "content"></contentbar>
+        <contentbar class = "contentbar"></contentbar>
       </div>
     </div>
     <footbar></footbar>
@@ -32,24 +32,27 @@ export default {
 
 <style>
   @import "assets/css/base.css";
+  .topbar {
+    margin-bottom: 20px;
+  }
   .contentFlex {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .contentDiv {
+  .contentDiv_main {
     width: 80%;
     min-width: 900px;
-    max-width: 1200px;
+    max-width: 1600px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .leftSidebar {
     margin-right: 15px;
-    flex-grow: 1;
+    width: 20%;
   }
-  .content {
-    flex-grow: 4;
+  .contentbar {
+    width: 77%;
   }
 </style>
