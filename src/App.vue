@@ -1,58 +1,36 @@
 <template>
-  <div id = "app">
-    <topbar class = "topbar"></topbar>
-    <div class = "contentFlex">
-      <div class = "contentDiv_main">
-        <left-sidebar class = "leftSidebar"></left-sidebar>
-        <contentbar class = "contentbar"></contentbar>
-      </div>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <div>
+      <p>
+        If Element is successfully added to this project, you'll see an
+        <code v-text="'<el-button>'"></code>
+        below
+      </p>
+      <el-button>el-button</el-button>
     </div>
-    <footbar></footbar>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import topbar from 'components/normal/topbar.vue'
-
-import leftSidebar from 'components/normal/left-sidebar.vue'
-import contentbar from 'components/normal/contentbar.vue'
-//import rightSidebar from 'components/normal/right-sidebar.vue'
-
-//import footbar from 'components/reusable/footbar.vue'
+import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    topbar,
-    leftSidebar, contentbar,
-    //rightSidebar, footbar
+    HelloWorld
   }
 }
 </script>
 
 <style>
-  @import "assets/css/base.css";
-  .topbar {
-    margin-bottom: 20px;
-  }
-  .contentFlex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .contentDiv_main {
-    width: 80%;
-    min-width: 900px;
-    max-width: 1600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .leftSidebar {
-    margin-right: 15px;
-    width: 20%;
-  }
-  .contentbar {
-    width: 77%;
-  }
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>

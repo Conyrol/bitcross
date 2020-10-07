@@ -12,7 +12,7 @@
       :key = "index"
       @mouseover = "liOver(index)"
       @mouseleave = "liLeave(index)"
-      @click = "liClick(index)" v-html = "i.tag + i.content"></li>
+      @click = "liClick(index)" v-html = "i.tag + i.className"></li>
     </ul>
   </div>
 </template>
@@ -23,19 +23,19 @@ export default {
   data() {
     return {
       test: [
-        {color: "#f1ca17", colorDisplay: "#FFF", content: "主页", background: "#f1ca17", width: "80%",
+        {color: "#f1ca17", colorDisplay: "#FFF", className: "主页", background: "#f1ca17", width: "80%",
         clickCheck: 1, tag:"<i class='fa fa-home' aria-hidden='true'></i> " },
-        {color: "#eea2a4", colorDisplay: "#eea2a4", content: "资料分类", background: "#FFF", width: "80%",
+        {color: "#eea2a4", colorDisplay: "#eea2a4", className: "资料分类", background: "#FFF", width: "80%",
         clickCheck: 0, tag:"<i class='fa fa-list' aria-hidden='true'></i> " },
-        {color: "#2775b6", colorDisplay: "#2775b6", content: "开发经验", background: "#FFF", width: "80%", 
+        {color: "#2775b6", colorDisplay: "#2775b6", className: "开发经验", background: "#FFF", width: "80%", 
         clickCheck: 0, tag:"<i class='fa fa-cogs' aria-hidden='true'></i> " },
-        {color: "#e3b4b8", colorDisplay: "#e3b4b8", content: "学习交流", background: "#FFF", width: "80%", 
+        {color: "#e3b4b8", colorDisplay: "#e3b4b8", className: "学习交流", background: "#FFF", width: "80%", 
         clickCheck: 0, tag:"<i class='fa fa-handshake-o lg' aria-hidden='true'></i> " },
-        {color: "#495c69", colorDisplay: "#495c69", content: "校园生活", background: "#FFF", width: "80%", 
+        {color: "#495c69", colorDisplay: "#495c69", className: "校园生活", background: "#FFF", width: "80%", 
         clickCheck: 0, tag:"<i class='fa fa-graduation-cap' aria-hidden='true'></i> " },
-        {color: "#229453", colorDisplay: "#229453", content: "算法竞赛", background: "#FFF", width: "80%", 
+        {color: "#229453", colorDisplay: "#229453", className: "算法竞赛", background: "#FFF", width: "80%", 
         clickCheck: 0, tag:"<i class='fa fa-file-code-o' aria-hidden='true'></i> " },
-        {color: "#a61b29", colorDisplay: "#a61b29", content: "科研讨论", background: "#FFF", width: "80%", 
+        {color: "#a61b29", colorDisplay: "#a61b29", className: "科研讨论", background: "#FFF", width: "80%", 
         clickCheck: 0, tag:"<i class='fa fa-superscript' aria-hidden='true'></i> " },
       ],
       fontSize: "16px"
